@@ -7,7 +7,7 @@ const supabase = require("../db/connection");
 /* GET home page. */
 router.get("/data", async function (req, res, next) {
   const { data, error } = await supabase.from("data").select();
-  // console.log(data);
+  console.log(data);
 
   res.send(data);
 });
